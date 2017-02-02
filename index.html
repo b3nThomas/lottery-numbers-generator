@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset='UTF-8'>
+    <title>Lottery Numbers Generator</title>
+    <link rel='stylesheet' type='text/css' href='main.css'>
+    <script src='jquery-3.1.1.min.js' asynch></script>
+    <script src='model.js' asynch></script>
+    <script src='controller.js' defer></script>
+  </head>
+
+  <body class='shadow white'>
+
+    <div id='header'>
+      <p class='center title'>Lottery Numbers Generator</p>
+    </div>
+
+    
+    <form id="gen-info" class='center'>
+      <div class='wrapper'>
+        <p class='form-label'>Range:</p>
+        <input type='radio' name='range' value='49' checked> 1 - 49
+        <input type='radio' name='range' value='79' checked> 1 - 79<br>
+        <input type='radio' name='range' value='59' checked> 1 - 59
+        <input type='radio' name='range' value='89' checked> 1 - 89<br>
+        <input type='radio' name='range' value='69' checked> 1 - 69
+        <input type='radio' name='range' value='99' checked> 1 - 99<br>
+        <br>
+      </div>
+
+      <div class='wrapper'>
+          <p class='form-label'>Number to draw:</p>
+          <input type='radio' name='draw' value='6' checked>6<br>
+          <input type='radio' name='draw' value='7' checked>7<br>
+          <input type='radio' name='draw' value='8' checked>8<br>
+          <br>
+      </div>
+
+    </form>
+
+    <div style='text-align: center'>
+      <button id='lucky-dip'> Generate Numbers </button><br><br>
+    </div>
+
+    <div id='yourNumbers' class='center title'></div>
+
+
+
+
+
+  </body>
+</html>
